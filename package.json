@@ -5,11 +5,15 @@
     "repository": "https://github.com/rekeye/chess-engine",
     "author": "Szymon Paluch (rekeye)",
     "license": "MIT",
-    "private": false,
+    "private": true,
+    "type": "module",
     "engines": {
         "node": ">=20.10.0"
     },
-    "type": "module",
+    "workspaces": [
+        "app",
+        "engine"
+    ],
     "devDependencies": {
         "@commitlint/cli": "^18.4.3",
         "@commitlint/config-conventional": "^18.4.3",
@@ -19,7 +23,8 @@
         "husky": "^8.0.3",
         "lint-staged": "^15.1.0",
         "prettier": "^3.1.0",
-        "typescript": "^5.3.2"
+        "typescript": "^5.3.2",
+        "bun-types": "latest"
     },
     "scripts": {
         "lint": "eslint .",
