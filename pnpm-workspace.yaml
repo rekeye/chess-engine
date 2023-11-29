@@ -1,0 +1,5 @@
+packages:
+  # The frontend part of the app, chess board an whatnot
+  - "app/*"
+  # Where the fun part is
+  - "engine/*"

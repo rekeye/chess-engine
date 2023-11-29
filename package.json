@@ -1,0 +1,28 @@
+{
+    "name": "chess-engine",
+    "version": "0.1.0",
+    "description": "A chess engine project, started out of boredom. Written in pure-Typescript. Might change the name later on, cant be bother thinking about it right now.",
+    "repository": "https://github.com/rekeye/chess-engine",
+    "author": "Szymon Paluch (rekeye)",
+    "license": "MIT",
+    "private": false,
+    "engines": {
+        "node": ">=20.10.0"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@commitlint/cli": "^18.4.3",
+        "@commitlint/config-conventional": "^18.4.3",
+        "@typescript-eslint/eslint-plugin": "^6.13.1",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "husky": "^8.0.3",
+        "lint-staged": "^15.1.0",
+        "prettier": "^3.1.0"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "prepare": "husky install"
+    }
+}
